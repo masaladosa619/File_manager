@@ -10,7 +10,7 @@ def create_file(filename):
             print(f"An error occurred") #if any other error will occur 
 
 def view_file():
-    files=os.listdir() #USED TO LIST ALL THE FILES IN DIRECTORY
+    files=os.listdir() 
     if not files:
         print("No such files exist")
     else:
@@ -48,7 +48,7 @@ def edit_file(filename):
     except Exception as e:
         print("An error occured")
 
-def main_fxn():
+def main_fxn(): #fix input out 
     while True:
         print("WELCOME TO THE FILE MANAGMENT APP")
         print("1:CREATE FILE")
@@ -57,7 +57,6 @@ def main_fxn():
         print("4:READ FILE")
         print("5:EDIT FILE")
         print("6:EXIT")
-
 
         choice=input("ENTER YOUR CHOICE OF OPERATION(1-6): ")
         if(choice=='1'):
@@ -86,7 +85,7 @@ if __name__=="__main__":
 
 
 
-
+#upgrade it to excel conversion something
 
 
 
